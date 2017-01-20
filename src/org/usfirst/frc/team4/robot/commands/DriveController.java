@@ -10,15 +10,9 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class DriveController extends Command {
 
-	double speed;
-	double driveOrientation;
+	private double speed;
+	private double driveOrientation;
 	
-	double lowSpeed = 0.5;
-	double highSpeed = 1; 
-	double forwardsDrive = 1;
-	double reverseDrive = -1;
-	
-
 	public DriveController() {
 		// here we actually need things from the Chassis subsystem so we will
 		// put robot.chassis into requires
@@ -37,16 +31,16 @@ public class DriveController extends Command {
 
 		// if statement that use isHigh data to tell whether to run high or low drive speeds		
 		if (Robot.chassis.isHigh) {
-			speed = highSpeed;
+			speed = 1;
 		} else {
-			speed = lowSpeed;
+			speed = 0.85;
 		}
 		
 		// // if statement that use isReversed data to tell whether to be reversed or regular
 		if (Robot.chassis.isReversed){
-			driveOrientation = reverseDrive;
+			driveOrientation = -1;
 		}else {
-			driveOrientation = forwardsDrive;
+			driveOrientation = 1;
 		}
 
 		// if statement that use isArcade data to tell whether to run arcade or tank drive		

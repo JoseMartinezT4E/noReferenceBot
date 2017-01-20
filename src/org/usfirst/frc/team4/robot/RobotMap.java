@@ -12,9 +12,9 @@ public class RobotMap {
 	// The roborio has many ports that tell us where power is being sent through
 	// Notice that there is nothing for the RobotDrive object we've made
 	
-	public static int CHASSIS_LEFT_FRONT_MOTOR = 0;
-	public static int CHASSIS_LEFT_BACK_MOTOR = 1;
-	public static int CHASSIS_RIGHT_FRONT_MOTOR = 2;
-	public static int CHASSIS_RIGHT_BACK_MOTOR = 3;
+	public static final int CHASSIS_LEFT_FRONT_MOTOR = 0;
+	public static final int CHASSIS_LEFT_BACK_MOTOR = 1;
+	public static final int CHASSIS_RIGHT_FRONT_MOTOR = 2;
+	public static final int CHASSIS_RIGHT_BACK_MOTOR = 3;
 	
 }
